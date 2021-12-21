@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto:wght@300;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1E1E1E;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+/* Navbar */
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #1E1E1E;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 50px;
+    font-size: 35px;
+    border-radius: 5px;
+    transition: background-color 1s;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid red;
+}
+
+
+.navbar a:active {
+    border-bottom: 3px solid red;
+}
+
+.navbar a:hover {
+    background-color: #FF4500;
+    color: black;
+}
+
+.headings {
+    color: #FF4500;
+    font-size: 70px;
+    text-align: center;
+}
+
+#home {
+    background: url(./Images/76908118_2532617403693721_4326809625186795520_n.jpg) no-repeat center center/cover;
+    height: 1000px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 8px;
+    height: 1001px;
+    right: 8px;
+    bottom: 1%;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.home-content h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.Alejandro {
+    font-size: 100px;
+    color: #FF4500;
+}
+
+.over-mij {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1E1E1E;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.over-mij div {
+    width: 50%;
+}
+
+.over-mij div img {
+    width: 60%;
+    margin-left: 40%;
+}
+
+.over-mij div h2 {
+    font-size: 50px;
+    margin-left: 20%;
+    color: #FF4500;
+}
+
+.over-mij div p {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 45%;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.over-mij a.button {
+    background-color: #FF4500;
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-left: 23%;
+    transition: background-color 2s;
+}
+
+.hobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #1E1E1E;
+    padding: 60px;
+}
+
+.hobby div {
+    width: 50%;
+}
+
+.hobby div img {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.hobby div h2 {
+    font-size: 50px;
+    margin-left: 22%;
+    color: #FF4500;
+    padding: 0;
+}
+
+.hobby div p {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 40%;
+    color: white;
+}
+
+footer {
+    background-color: black;
+}
+
+footer h3 {
+    text-align: center;
+    color: white;
+    padding: 40px;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+
+
+
+
+
+/* tablet version 940*860 */
+
+@media (max-width: 940px) {
+
+    .navbar {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 73px;
+        left: 8px;
+        height: 1001px;
+        right: 8px;
+        bottom: 1%;
+        background: rgba(0, 0, 0, 0.5);
+
+
+    }
+
+    .over-mij div {
+        width: 100%;
+    }
+
+    .over-mij div h2 {
+        font-size: 50px;
+        text-align: center;
+        margin-right: 170px;
+    }
+
+    .over-mij div p {
+        font-size: 20px;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .over-mij div img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .over-mij a.button {
+        margin-left: 380px;
+    }
+
+    .hobby div {
+        width: 100%;
+    }
+
+    .hobby div img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .hobby div h2 {
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0;
+    }
+
+    .hobby div p {
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+}
+
+/* mobile version 360*640 */
+@media (max-width: 360px) {
+
+    .navbar {
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+
+    .navbar ul {
+        display: block;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .navbar li {
+        display: block;
+        width: 100%;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #1E1E1E;
+        overflow-x: hidden;
+        padding: 0;
+        width: 790px;
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 177px;
+        left: 8px;
+        height: 999px;
+        right: -438px;
+        bottom: 1%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .over-mij a.button {
+        margin-left: 305px;
+    }
+}
